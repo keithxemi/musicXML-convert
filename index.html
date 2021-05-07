@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>MusicXML to ASCII</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <meta name="description" content="XML to ASCII converter">
+  <meta name="author" content="Keith Thomas">
+  <meta property="og:url" content="http://colortab.org/ascii.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="XML to ASCII Converter"/>
+  <meta property="og:description" content="Convert MusicXML Tablature into ASCII Tab." />
+  <meta property="og:image" content="http://colortab.org/images/fbnote.png"/>
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="445" />
+  <meta property="og:fb:admins" content="10218875309186443" />
+<!--  <script type="text/javascript" src="xmltab.js"></script>-->
+
+  <style>
+
+</style>
+  
+  <script id="lcss" type="text/javascript" src=".\xml.css" ></script><!--delete for single file************-->
+  <script id="ljs" type="text/javascript" src=".\xmltab.js" ></script><!--delete for single file*************-->  
+</head>
+
+<body>  
+  <div id="main">    
+  <div id="content">
+  <div id="title"><ol><li class="s9t">C</li><li class="s6t">o</li><li class="s5t">l</li><li class="s4t">o</li><li class="s3t">r</li><li class="s8t">T</li><li class="s2t">a</li><span class="titledd">&#x00D1;</span></ol>
+  </div>
+    
+<div id="subtitle">Convert MusicXML</div>   
+ 
+    
+<!--    <label for="chooseFile" class="fileLabel">Open</label>  <input type='file' id="chooseFile" accept='.musicxml, .xml'>-->
+     <output id="out"></output><label id="openLabel" for="chooseFile" class="fileLabel">Open</label><input type='file' id="chooseFile" accept='.musicXML, .mxl, .xml'> <button id="dFile">Save</button> as <input id="fname" type="text" placeholder="song-asc-tab">.txt<br>  LEN <input id="ascLen" name="alen" type="text" placeholder="100" list="ascii-lengths"><label>  <input id="kBars" type="checkbox" checked>  Measures<input id="kRests" type="checkbox" checked>Rests</label>
+    <datalist id="ascii-lengths">
+    <option value="110">
+    <option value="100">
+    <option value="90">
+    <option value="80">
+    <option value="0">
+</datalist>
+ 
+  <div id="inText"><textarea id="TabIn" contenteditable="false" draggable="false" spellcheck="false"  rows="10" cols="80" placeholder=" Drop a MusicXML file (.mxl .xml .musicxml)&#10; or Open and browse to choose a file &#10; that contains XML tablature.&#10;&#10; Save to download the converted ASCII&#10; tablature with any filename.txt&#10;&#10; Only one tablature part will be converted.&#10;&#10; LENgth is ASCII characters per line.&#10; Use 0 for inline or to split by measures.&#10;&#10; Check boxes to not split Measures and&#10; to include spacing for Rests.&#10;&#10; Choose higher RESolution to increase timing&#10; accuracy or lower to use fewer dashes. &#10;&#10; Rename .mxl to .zip and extract first&#10; to convert compressed MusicXML files."></textarea></div>
+ 
+<noscript>This page does nothing without JavaScript</noscript>
+
+<div id="bottom">
+<footer id="foot"><a href="http://colortab.org/" target="_blank" rel="noreferrer noopener">ColorTab.org</a>&nbsp;&nbsp;
+      <a href="https://colortab.org/ColorTabApp.html" target="_blank" rel="noreferrer noopener">APP</a> &nbsp;&nbsp;<a href="https://www.colortab.org/wp-content/uploads/scratch.htm" target="_blank" rel="noreferrer noopener">Scratch</a> &nbsp;<a href="http://colortab.org/musicxml/" target="_blank" rel="noreferrer noopener">XML</a>
+      <br>&copy; Copyright 2021, Keith Thomas<br>&#x00D0;ownstem &#x00D0;uration musicxml v1.00</footer>
+</div>
+</div> 
+</div>
+</body>
+</html>
